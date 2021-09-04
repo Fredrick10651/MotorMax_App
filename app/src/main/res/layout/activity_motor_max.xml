@@ -6,11 +6,31 @@
     tools:context="com.moringaschool.motormax.MotorMaxActivity">
 
     <TextView
+        android:id="@+id/locationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Car Models "
-        android:id="@+id/locationTextView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="336dp"
+        android:layout_marginRight="336dp"
+        android:text="Car Models " />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/locationTextView"/>
+
+    <Button
+        android:id="@+id/discoverMotorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bad_script"
+        android:text="Discover Motor "
+        android:textColor="@color/teal_700" />
 
 </RelativeLayout>
