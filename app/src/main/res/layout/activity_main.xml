@@ -24,16 +24,6 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/locationEditText"
-        android:background="@color/purple_500"
-        android:layout_above="@+id/discoverMotorButton"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:hint="Enter Zip Code"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/discoverMotorButton"
