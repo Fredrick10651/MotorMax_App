@@ -6,11 +6,11 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/motor"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/motor" />
 
     <TextView
         android:id="@+id/appNameTextView"
@@ -22,16 +22,25 @@
         android:text="MotorMax"
         android:textColor="@color/purple_700"
         android:textSize="40sp"
-        android:textStyle="bold"
+        android:textStyle="bold" />
 
-        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationEditText"
+        android:background="@color/purple_500"
+        android:layout_above="@+id/discoverMotorButton"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:hint="Enter Zip Code"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/discoverMotorButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Discover Motor "
-        android:textColor="@color/teal_700"/>
+        android:textColor="@color/teal_700" />
 </RelativeLayout>
