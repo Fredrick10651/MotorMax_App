@@ -26,7 +26,8 @@ public class MotorMaxActivity extends AppCompatActivity {
         mSelectModeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MotorMaxActivity.this, "PASH UKO", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MotorMaxActivity.this, CarModelActivity.class);
+                startActivity(intent);
             }
         });
 
