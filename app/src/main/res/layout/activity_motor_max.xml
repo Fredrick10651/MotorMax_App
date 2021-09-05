@@ -11,17 +11,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="336dp"
-        android:layout_marginRight="336dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
         android:text="Car Models " />
 
     <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_alignParentRight="true"
+        android:layout_below="@+id/locationTextView"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/locationTextView"/>
+        android:layout_alignParentRight="true" />
 
     <Button
         android:id="@+id/discoverMotorButton"
