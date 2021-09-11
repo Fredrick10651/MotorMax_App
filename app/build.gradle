@@ -25,7 +25,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                    }
 
+
+        buildTypes.each {
+            it.buildConfigField 'String', 'X_RAPID_API_KEY', XRapidAPIKey
         }
 
 
